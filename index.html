@@ -1,45 +1,59 @@
-<!DOCTYPE html>
-<html lang="pl">
+<!doctype html>
+<html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>MyniProjects</title>
-    <style>
-        body { 
-            font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif; 
-            background: #0f172a; 
-            color: #f8fafc; 
-            display: flex; 
-            justify-content: center; 
-            align-items: center; 
-            height: 100vh; 
-            margin: 0; 
-        }
-        .container { 
-            text-align: center; 
-            padding: 2.5rem 3rem; 
-            background: #1e293b; 
-            border-radius: 16px; 
-            box-shadow: 0 10px 25px rgba(0, 0, 0, 0.4); 
-            border: 1px solid #334155;
-        }
-        h1 { 
-            margin: 0 0 0.5rem 0; 
-            color: #38bdf8; 
-            font-size: 2rem;
-            letter-spacing: -0.5px;
-        }
-        p { 
-            color: #94a3b8; 
-            margin: 0; 
-            font-size: 0.95rem; 
-        }
-    </style>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="Independent Android games and apps by MyniProjects.">
+  <title>MyniProjects — Games &amp; Apps</title>
+  <link rel="stylesheet" href="styles.css">
+  <script src="apps.js" defer></script>
+  <script src="main.js" defer></script>
 </head>
 <body>
-    <div class="container">
-        <h1>MyniProjects</h1>
-        <p>Android Developer Portfolio</p>
-    </div>
+  <header class="header wrap">
+    <a class="brand" href="index.html" aria-label="MyniProjects home">
+      <span class="brand-mark" aria-hidden="true">m<span>.</span></span>
+      <span>MyniProjects</span>
+    </a>
+    <nav aria-label="Main">
+      <a href="#apps">Projects</a>
+      <a href="#contact">Contact</a>
+    </nav>
+  </header>
+  <main>
+    <section class="hero wrap">
+      <div class="hero-copy">
+        <p class="eyebrow"><span class="eyebrow-line"></span> Independent Android projects</p>
+        <h1>Made for the<br><em>fun of it.</em></h1>
+        <p class="intro">A few games and apps I made in my spare time. Some are new, some were made a long time ago.</p>
+        <a class="hero-link" href="#apps">Explore the projects <span aria-hidden="true">↓</span></a>
+      </div>
+      <div class="hero-art" aria-hidden="true">
+        <div class="orbit orbit-one"></div>
+        <div class="orbit orbit-two"></div>
+        <div class="art-center">m<span>.</span></div>
+        <span class="art-dot dot-one"></span>
+        <span class="art-dot dot-two"></span>
+        <span class="art-dot dot-three"></span>
+      </div>
+    </section>
+    <section class="projects" id="apps" aria-labelledby="projects-heading" tabindex="-1">
+      <div class="wrap">
+        <div class="section-head">
+          <h2 id="projects-heading">Things I've made<span>.</span></h2>
+          <p>Open a project for store and privacy links.</p>
+        </div>
+        <div id="app-list" class="app-grid"></div>
+        <noscript><p>Enable JavaScript to see the project list.</p></noscript>
+      </div>
+    </section>
+    <section class="contact wrap" id="contact" aria-labelledby="contact-heading" tabindex="-1">
+      <h2 id="contact-heading">Have a question<span>?</span></h2>
+      <a href="mailto:myniprojects@gmail.com">myniprojects@gmail.com</a>
+    </section>
+  </main>
+  <footer class="footer wrap">
+    <span>© MyniProjects</span>
+  </footer>
 </body>
 </html>
